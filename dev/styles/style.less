@@ -1,0 +1,50 @@
+// normalize
+
+//@import '../styles/normalize.less';
+
+// fonts & variables
+
+@import '../styles/helpers/variables.less';
+@import '../styles/helpers/sprite.less';
+@import '../styles/fonts.css';
+
+// desktop
+
+@import '../blocks/block-header/header.less';
+
+@import '../blocks/block-footer/footer.less';
+@import '../blocks/block-popup/popup.less';
+
+@import '../styles/custom.less';
+
+// SETTINGS //
+
+// animation
+
+a, a:hover, li, img, input, textarea {
+	transition: all 0.5s ease-in-out;
+}
+
+// body
+
+body {
+	cursor: default;
+	overflow-x: hidden !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+	font: 14px 'tahoma';
+	color: #f00 !important;
+}
+
+.color-red {
+	color: #cd333f;
+}
+
+.color-blue {
+	color: #195abc;
+}
