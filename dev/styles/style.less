@@ -11,6 +11,7 @@
 // desktop
 
 @import '../blocks/block-header/header.less';
+@import '../blocks/block-main-screen/main-screen.less';
 
 @import '../blocks/block-footer/footer.less';
 @import '../blocks/block-popup/popup.less';
@@ -36,11 +37,6 @@ a {
   cursor: pointer;
 }
 
-p {
-	font: 14px 'tahoma';
-	color: #f00 !important;
-}
-
 .color-red {
 	color: #cd333f;
 }
@@ -55,4 +51,26 @@ p {
 
 .right {
 	float: right;
+}
+
+.button-blue {
+	display: block;
+	width: 177px;
+	height: 37px;
+	background: url('../img/button-blue.png') no-repeat;
+	font: 12px 'robotomedium';
+	color: @white;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 37px;
+	border-radius: 6px;
+
+	&:hover, &:focus {
+		background: @blue;
+		color: @white;
+		font-family: 'robotobold';
+		border-radius: 6px;
+		text-decoration: none;
+	}
+
 }
