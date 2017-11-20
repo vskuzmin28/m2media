@@ -1,18 +1,5 @@
 @import '../styles/fonts.css';
-.title-block {
-  height: auto;
-  text-align: center;
-}
-.title-block h3 {
-  font: 48px 'akrobatbold';
-  text-transform: uppercase;
-  color: #3f66c8;
-}
-.title-block p {
-  font: 30px 'akrobatbold';
-  text-transform: uppercase;
-  color: #c02c9b !important;
-}
+.logo,
 a,
 a:hover,
 li,
@@ -38,6 +25,12 @@ p {
 .color-blue {
   color: #195abc;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 @media only screen and (min-width: 1200px) {
   .footer {
     padding: 52px 0;
@@ -54,11 +47,81 @@ p {
 }
 @media only screen and (min-width: 1200px) {
   .header {
-    position: relative;
-    height: 145px;
-    background: #191d27;
-    font: 12px 'robotobold';
+    height: 88px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .header__phone-number a,
+  .header__phone-number a:hover {
+    line-height: 88px !important;
+  }
+  .logo {
+    margin-top: 18px;
+    width: 140px;
+    height: 48px;
+    background: #0086ce;
+    font: 18px 'robotobold_italic';
+    line-height: 48px;
+    text-align: center;
     color: #fff;
+  }
+  .logo:hover {
+    background: #22252f;
+  }
+  .navigation {
+    margin-left: 0px;
+    height: 88px;
+  }
+  .navigation ul {
+    -webkit-padding-start: 0;
+    height: auto;
+  }
+  .navigation ul li {
+    list-style: none;
+  }
+  .navigation ul li a,
+  .navigation ul li a:hover {
+    padding: 0 6px;
+    display: inline-block;
+    height: 88px;
+    font: 14px 'robotoregular';
+    color: #22252f;
+    line-height: 89px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #fff;
+    text-decoration: none;
+    margin-right: 40px;
+  }
+  .navigation ul li a:hover,
+  .navigation ul li a:hover:hover,
+  .navigation ul li a:focus,
+  .navigation ul li a:hover:focus {
+    border-color: #0086ce;
+    color: #0086ce;
+  }
+  .navigation ul li a:last-child,
+  .navigation ul li a:hover:last-child {
+    margin-right: 0 !important;
+  }
+  .phone-number {
+    height: auto;
+  }
+  .phone-number a,
+  .phone-number a:hover {
+    display: block;
+    font: 18px 'robotoregular';
+    color: #0086ce;
+    text-decoration: none;
+    text-align: right;
+  }
+  .phone-number a:hover,
+  .phone-number a:hover:hover,
+  .phone-number a:focus,
+  .phone-number a:hover:focus {
+    color: #22252f;
+  }
+  .container-small {
+    width: 994px !important;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1200px) {
@@ -79,7 +142,6 @@ p {
     background: #fff;
   }
   .popup p {
-    font: 18px 'akrobatlight';
     text-align: center;
     line-height: 200px;
     color: #000 !important;
@@ -105,7 +167,6 @@ p {
     background: #fff;
   }
   .popup p {
-    font: 18px 'akrobatlight';
     text-align: center;
     line-height: 200px;
     color: #000 !important;
