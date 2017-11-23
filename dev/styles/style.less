@@ -57,7 +57,11 @@ a {
 	display: block;
 	width: 177px;
 	height: 37px;
-	background: url('../img/button-blue.png') no-repeat;
+	background-image: -webkit-gradient(linear, 175 0, 0 0, color-stop(0.302, #45ace3), color-stop(0.731, #0086ce));
+	background-image: -webkit-linear-gradient(180deg, #45ace3 30.2%, #0086ce 73.1%);
+	background-image: -moz-linear-gradient(180deg, #45ace3 30.2%, #0086ce 73.1%);
+	background-image: -o-linear-gradient(180deg, #45ace3 30.2%, #0086ce 73.1%);
+	background-image: linear-gradient(270deg, #45ace3 30.2%, #0086ce 73.1%);
 	font: 12px 'robotomedium';
 	color: @white;
 	text-transform: uppercase;
@@ -66,7 +70,7 @@ a {
 	border-radius: 6px;
 
 	&:hover, &:focus {
-		background: @blue;
+		background: @black;
 		color: @white;
 		font-family: 'robotobold';
 		border-radius: 6px;
