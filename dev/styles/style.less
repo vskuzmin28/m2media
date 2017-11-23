@@ -78,3 +78,27 @@ a {
 	}
 
 }
+
+.button-transparent {
+	display: block;
+	width: 177px;
+	height: 37px;
+	background: 0;
+	font: 12px 'robotomedium';
+	color: @white;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 6px;
+	border: 2px solid @white;
+
+	&:hover, &:focus {
+		background: @white;
+		color: @blue;
+		border-color: @white;
+		font-family: 'robotobold';
+		border-radius: 6px;
+		text-decoration: none;
+	}
+
+}
