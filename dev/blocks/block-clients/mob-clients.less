@@ -1,11 +1,28 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// footer
+	// clients
 
-	.footer {
-		padding: 52px 0;
-		background: #191d27;
-		position: relative;
+	.clients {
+		height: auto;
+		padding: 64px 0 68px 0;
+		background: @white;
+
+		img {
+			width: 150px;
+			height: 81px;
+			display: block;
+			margin: 0 auto;
+			-webkit-filter: grayscale(100%);
+    		filter: grayscale(100%);
+    		transition: 1s;
+
+    		&:hover {
+    			-webkit-filter: grayscale(0%);
+    			filter: grayscale(0%);
+    		}
+
+		}
+
 	}
 
 }
