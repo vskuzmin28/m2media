@@ -1,11 +1,51 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// footer
+	// profit growth
 
-	.footer {
-		padding: 52px 0;
-		background: #191d27;
-		position: relative;
+	.profit-growth {
+		height: auto;
+		padding: 40px 0;
+		background: @white;
+	}
+
+	.profit-growth__list {
+		margin-top: 10px;
+		height: auto;
+
+		ul {
+
+			li {
+				list-style: square outside;
+				color: @blue;
+				margin-bottom: 30px;
+
+				&:last-child {
+					margin-top: 50px;
+				}
+
+				strong {
+					display: block;
+					margin-bottom: 50px;
+					font: 20px 'robotomedium';
+					text-transform: uppercase;
+					color: #2c2c2c;
+				}
+
+				p {
+					font: 16px 'robotoregular';
+					color: #333333;
+
+					span {
+						color: #797979;
+						padding-left: 10px;
+					}
+
+				}
+
+			}
+
+		}
+
 	}
 
 }
