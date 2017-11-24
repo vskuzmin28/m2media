@@ -1,75 +1,45 @@
 @media only screen and (min-width : @desktop) {
 
-	// footer
+	// profit growth
 
-	.footer {
-		padding: 36px 0 32px 0;
+	.profit-growth {
+		height: auto;
+		padding: 40px 0;
 		background: @white;
-		position: relative;
 	}
 
-	// footer logo
-
-	.footer__logo {
-		margin-bottom: 40px;
-	}
-
-	// list
-
-	.footer__list {
+	.profit-growth__list {
+		margin-top: 10px;
 		height: auto;
 
 		ul {
-			-webkit-padding-start: 0;
-			padding: 0;
 
 			li {
-				margin-right: 20px;
-				padding: 0 10px;
-				display: inline-block;
-				font: 14px 'robotoregular';
-				color: @black-light;
-			}
-
-		}
-
-	}
-
-	// phone number
-
-	.footer__phone-number {
-		margin: 28px 0 42px 0;
-		font: 18px 'robotomedium';
-	}
-
-	.footer__social-icons {
-		position: relative;
-		float: right;
-	}
-
-	// socials icons
-
-	.social-icons {
-		height: auto;
-
-		ul {
-			-webkit-padding-start: 0;
-			padding: 0;
-			list-style: none;
-
-			li {
-				margin: 0 10px;
-				display: inline-block;
-
-
-				&:hover img {
-					-webkit-filter: grayscale(100%);
-    				filter: grayscale(100%);
-    				transition: 1s;
-				}
+				list-style: square outside;
+				color: @blue;
+				margin-bottom: 30px;
 
 				&:last-child {
-					margin: 0;
+					margin-top: 50px;
+				}
+
+				strong {
+					display: block;
+					margin-bottom: 50px;
+					font: 20px 'robotomedium';
+					text-transform: uppercase;
+					color: #2c2c2c;
+				}
+
+				p {
+					font: 16px 'robotoregular';
+					color: #333333;
+
+					span {
+						color: #797979;
+						padding-left: 10px;
+					}
+
 				}
 
 			}
