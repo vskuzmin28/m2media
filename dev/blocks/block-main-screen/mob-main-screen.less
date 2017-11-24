@@ -1,12 +1,30 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// header
+	// main screen
 
-	.header {
-		position: relative;
+	.main-screen {
+		padding: 20px 0;
 		height: auto;
-		background: #191d27;
-		font: 12px 'robotobold';
+		background: #212430 url('../img/main-screen.jpg') no-repeat center top;
+		background-size: cover;
+		color: @white;
+		overflow: hidden;
+
+		h2 {
+			margin: 27px 0 20px 0;
+			font: 22px 'robotomedium';
+			text-transform: uppercase;
+			line-height: auto;
+		}
+
+		p {
+			margin-bottom: 20px;
+			font: 12px 'robotoregular';
+			text-transform: uppercase;
+			line-height: 24px;
+
+		}
+
 	}
 
 }
