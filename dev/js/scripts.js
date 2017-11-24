@@ -25,4 +25,10 @@ $('.send-form').submit(function() {
     return false;
   })
 
+// scroll smooth
+
 var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
+
+// wow animate
+
+new WOW().init();

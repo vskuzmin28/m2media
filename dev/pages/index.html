@@ -10,6 +10,7 @@
     <title>m2media</title>
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/animate.css">
     <link rel="stylesheet" href="../styles/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
@@ -25,13 +26,13 @@
         <div class="row">
           <div class="col-md-1 logo-column">
             <!-- logotype-->
-            <div class="logo">М2Медиа</div>
+            <div class="logo wow fadeIn">М2Медиа</div>
           </div>
           <div class="col-md-8">
             <!-- navigation-->
             <div class="navigation">
               <ul>
-                <li><a href="#" title="">О нас</a><a href="#" title="">Поиск экранов</a><a href="#" title="">Наши работы</a><a href="#" title="">Эффективность</a></li>
+                <li><a data-easing="easeInQuad" href="#about" title="">О нас</a><a data-easing="easeInQuad" href="#search-screens" title="">Поиск экранов</a><a data-easing="easeInQuad" href="#works" title="">Наши работы</a><a data-easing="easeInQuad" href="#efficiency" title="">Эффективность</a></li>
               </ul>
             </div>
           </div>
@@ -48,7 +49,7 @@
       <!-- container-->
       <div class="container container-small">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 wow fadeInUp">
             <h2>Один день после регистрации бесплатно</h2>
             <p>мы позволяем искать наружную рекламу в вашем регионе. Рекламные щиты, приюты для автобусов, цифровые экраны и многое другое</p>
             <p>Просто создайте учетную запись ниже и используйте нашу онлайн-карту, чтобы просмотреть местоположения, цены, фотографии и доступность. Если вам нравится то, что вы видите, выберите даты, которые вы хотите, и покупайте онлайн.</p><a class="button-blue" href="#" title="">Зарегистрироваться</a>
@@ -59,11 +60,11 @@
     </div>
     <!-- / main screen-->
     <!-- about-->
-    <div class="about">
+    <div class="about" id="about">
       <!-- container-->
       <div class="container container-small">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 wow fadeIn">
             <h3>О нас</h3>
             <p>This is Photoshop's version  of Lorem Ipsum. Proin nibh vel velit auctor aliquet. Aenean sollicitudin, quis bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh id elit. Duis sed odio sit ametvulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec ellus a odio tincidunt This is Photoshop's version of Lorem Ipsum. Proin nibh vel velit auctor aliquet. Aenean sollicitudin, quis bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh id elit. Duis sed odio sit ametvulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec ellus a odio tincidunt </p>
           </div>
@@ -72,14 +73,14 @@
     </div>
     <!-- / about-->
     <!-- search-->
-    <div class="search">
+    <div class="search" id="search-screens">
       <!-- container-->
       <div class="container">
         <div class="row">
-          <div class="col-md-6"><img class="search__map" src="../img/map.jpg" alt="@@"></div>
+          <div class="col-md-6"><img class="search__map wow fadeIn" src="../img/map.jpg" alt="@@"></div>
           <div class="col-md-6">
             <!-- search content-->
-            <div class="search__content">
+            <div class="search__content wow fadeIn">
               <h3>Поиск</h3>
               <p>Создав учетную запись, вы увидите нашу онлайн-карту. Увеличьте область, в которой вы заинтересованы, и используя поле фильтра, вы можете искать доступность по дате и сузить требуемые форматы.</p>
               <p>Всё очень просто. Настолько, что у нас есть даже отзывы!</p>
@@ -109,16 +110,16 @@
     </div>
     <!-- / you digital-->
     <!-- profit growth-->
-    <div class="profit-growth">
+    <div class="profit-growth" id="efficiency">
       <!-- container-->
       <div class="container container-small">
         <div class="row">
           <div class="col-md-6">
-            <!-- graph--><img src="../img/graph.jpg" alt="@@">
+            <!-- graph--><img class="wow fadeInLeft" src="../img/graph.jpg" alt="@@">
           </div>
           <div class="col-md-6">
             <!-- list-->
-            <div class="profit-growth__list">
+            <div class="profit-growth__list wow fadeIn">
               <ul>
                 <li><strong>Рост прибыли с 0,5 до 1,0 миллиона</strong></li>
                 <li>
@@ -147,7 +148,7 @@
         <div class="row">
           <div class="col-md-6">
             <!-- content-->
-            <div class="screens__content">
+            <div class="screens__content wow fadeInLeft">
               <h3>экраны</h3>
               <p>This is Photoshop's version  of Lorem Ipsum. Proin  nibh vel velit auctor aliquet. Aenean sollicitudin, quis bibendum auctor, nisi elit consequat sagittis sem nibh id elit. Duis sed odio sit amet vulputate cursus mauris. Morbi  accumsan ipsum velit. Nam nec ellus a odio tinciduntaliquet. Aenean sollicitudin, quis bibendum auctor, nisi elit consequat sagittis sem nibh id elit. Duis sed odio sit amet vulputate cursus mauris. Morbi  accumsan ipsum velit. Nam nec ellus a odio tincidunt</p>
               <h4>6000р/2000 показов</h4><span>Бесплатное пробное размещение рекламы на несколько дней.</span>
@@ -157,13 +158,13 @@
               </ul><a class="button-blue" href="#" title="">Зарегистрироваться					</a>
             </div>
           </div>
-          <div class="col-md-6"><img class="screens__example" src="../img/screen.jpg" alt="@@"></div>
+          <div class="col-md-6"><img class="screens__example wow fadeIn" src="../img/screen.jpg" alt="@@"></div>
         </div>
       </div>
     </div>
     <!-- / screens-->
     <!-- works-->
-    <div class="works">
+    <div class="works" id="works">
       <!-- container-->
       <div class="container">
         <div class="row">
@@ -172,9 +173,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4"><img src="../img/works/work-1.jpg" alt="@@"></div>
-          <div class="col-md-4"><img src="../img/works/work-2.jpg" alt="@@"></div>
-          <div class="col-md-4"><img src="../img/works/work-1.jpg" alt="@@"></div>
+          <div class="col-md-4"><img class="wow fadeIn" src="../img/works/work-1.jpg" alt="@@"></div>
+          <div class="col-md-4"><img class="wow fadeIn" src="../img/works/work-2.jpg" alt="@@"></div>
+          <div class="col-md-4"><img class="wow fadeIn" src="../img/works/work-1.jpg" alt="@@"></div>
         </div>
       </div>
     </div>
@@ -214,7 +215,7 @@
         <div class="row">
           <div class="col-md-7">
             <!-- logotype-->
-            <div class="logo footer__logo">М2Медиа</div>
+            <div class="logo footer__logo wow fadeIn">М2Медиа</div>
             <!-- list-->
             <div class="footer__list">
               <ul>
@@ -226,9 +227,9 @@
           </div>
           <div class="col-md-5">
             <!-- phone number-->
-            <div class="phone-number footer__phone-number"><a href="tel:88001005598" title="">8(800) 100 55 98</a></div>
+            <div class="phone-number footer__phone-number wow fadeInRight"><a href="tel:88001005598" title="">8(800) 100 55 98</a></div>
             <!-- social icons-->
-            <div class="social-icons footer__social-icons">
+            <div class="social-icons footer__social-icons wow fadeInRight">
               <ul>
                 <li><a href="#" title=""><img src="../img/icons/icon-vk.png" alt="@@"></a></li>
                 <li><a href="#" title=""><img src="../img/icons/icon-fb.png" alt="@@"></a></li>
@@ -249,6 +250,7 @@
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/jquery.bpopup.min.js"></script>
     <script src="../js/smooth-scroll.js"></script>
+    <script src="../js/wow.js">  </script>
     <script src="../js/scripts.js"></script>
     <!-- / scripts-->
   </body>
