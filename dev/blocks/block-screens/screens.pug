@@ -1,4 +1,4 @@
-footer.footer
+.screens
 
 	// container
 
@@ -6,42 +6,35 @@ footer.footer
 
 		.row
 
-			.col-md-7
+			.col-md-6
 
-				// logotype
+				// content
 
-				.logo.footer__logo
-					| М2Медиа
+				.screens__content
 
-				// list
+					h3
+						| экраны
 
-				.footer__list
-					ul
-						li
-							| ellus a odio tincidunt 
-						li
-							| ellus a odio tincidunt 
-						li
-							| ellus a odio tincidunt 						
+					p
+						| This is Photoshop's version  of Lorem Ipsum. Proin  nibh vel velit auctor aliquet. Aenean sollicitudin, quis bibendum auctor, nisi elit consequat sagittis sem nibh id elit. Duis sed odio sit amet vulputate cursus mauris. Morbi  accumsan ipsum velit. Nam nec ellus a odio tinciduntaliquet. Aenean sollicitudin, quis bibendum auctor, nisi elit consequat sagittis sem nibh id elit. Duis sed odio sit amet vulputate cursus mauris. Morbi  accumsan ipsum velit. Nam nec ellus a odio tincidunt
 
-			.col-md-5
+					h4
+						| 6000р/2000 показов
 
-				// phone number
+					span
+						| Бесплатное пробное размещение рекламы на несколько дней.
 
-				.phone-number.footer__phone-number
-					a(href="tel:88001005598" title="")
-						| 8(800) 100 55 98
-
-				// social icons
-
-				.social-icons.footer__social-icons
-					ul
+					ul.screens__content__icons-doc
 						li
 							a(href="#" title="")
-								img(src="../img/icons/icon-vk.png" alt="@@")
+								| Прайс
 						li
 							a(href="#" title="")
-								img(src="../img/icons/icon-fb.png" alt="@@")
-						li
-							a(href="#" title="")
-								img(src="../img/icons/icon-inst.png" alt="@@")
+								| Спецификация
+
+					a.button-blue(href="#" title="")
+						| Зарегистрироваться					
+
+			.col-md-6
+
+				img.screens__example(src="../img/screen.jpg" alt="@@")
