@@ -9,6 +9,19 @@ $('.call').click(function(){
     }); 
 });
 
+// popup registration
+
+$('.popup-registration').hide();
+
+$('.call-popup-registration').click(function(e){
+  e.preventDefault();
+  $('.popup-registration').bPopup({
+    closeClass:'popup-close',
+      amsl: 0,
+      positionStyle: 'fixed',
+    }); 
+});
+
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         
      if (res.success == 1) {
