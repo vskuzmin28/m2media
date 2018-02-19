@@ -4,15 +4,15 @@
   <form action="/" method="post">
     <!-- field-->
     <div class="input-field">
-      <input type="text" name="fio" placeholder="ФИО"/>
+      <input type="text" name="fio" placeholder="ФИО" required="required"/>
     </div>
     <!-- field-->
     <div class="input-field">
-      <input type="text" name="email" placeholder="E-mail"/>
+      <input type="text" name="email" placeholder="E-mail" required="required"/>
     </div>
     <!-- field-->
     <div class="input-field">
-      <input type="text" name="phone" placeholder="Телефон"/>
+      <input type="text" name="phone" placeholder="Телефон" required="required"/>
     </div>
     <!-- popup info-->
     <div class="popup-info">
@@ -21,6 +21,23 @@
     <!-- field-->
     <div class="button-submit">
       <button class="btn-simple-blue">Зарегистрироваться</button>
+    </div>
+  </form>
+</div>
+<div class="popup popup-logIn"><a class="popup-close" href="#" title=""></a>
+  <h4>Вход в личный кабинет</h4>
+  <form action="/" method="post">
+    <!-- field-->
+    <div class="input-field">
+      <input type="text" name="login" placeholder="Имя пользователя"/>
+    </div>
+    <!-- field-->
+    <div class="input-field">
+      <input type="password" name="password" placeholder="Пароль"/>
+    </div><a class="popup-forgot" href="#" title="">Забыли пароль?</a>
+    <!-- field-->
+    <div class="button-submit">
+      <button class="btn-simple-blue">Войти</button>
     </div>
   </form>
 </div>

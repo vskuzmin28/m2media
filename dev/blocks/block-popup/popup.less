@@ -1,10 +1,13 @@
 @media only screen and (min-width : @desktop) {
 
+	.popup-registration, .popup-logIn, #okthanks {
+		display: none;
+	}
+
 	// popup
 
-	.popup-registration {
+	.popup {
 		padding: 20px;
-		display: none;
 		position: relative;
 		width: 350px;
 		height: auto;
@@ -25,7 +28,7 @@
 			font: 20px 'robotomedium';
 		}
 
-		input[type=text] {
+		input[type=text], input[type=password] {
 			padding: 0 14px;
 			margin-bottom: 14px;
 			width: 100%;
@@ -81,6 +84,21 @@
 		width: 24px;
 		height: 24px;
 		background: url('../img/icon-close.png') no-repeat;
+	}
+
+	.popup-forgot {
+		margin-top: 26px;
+		display: block;
+		position: absolute;
+		width: 160px;
+		height: 30px;
+		color: #000;
+		text-decoration: underline;
+
+		&:hover {
+			color: #0086cf;
+		}
+
 	}
 
 }

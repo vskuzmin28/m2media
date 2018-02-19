@@ -10,17 +10,17 @@
 		// field
 
 		.input-field
-			input(type="text" name="fio" placeholder="ФИО")
+			input(type="text" name="fio" placeholder="ФИО" required)
 
 		// field
 
 		.input-field
-			input(type="text" name="email" placeholder="E-mail")
+			input(type="text" name="email" placeholder="E-mail" required)
 
 		// field
 
 		.input-field
-			input(type="text" name="phone" placeholder="Телефон")
+			input(type="text" name="phone" placeholder="Телефон" required)
 
 		// popup info
 
@@ -33,6 +33,34 @@
 		.button-submit
 			button.btn-simple-blue
 				| Зарегистрироваться
+
+.popup.popup-logIn
+
+	a.popup-close(href="#" title="")
+
+	h4
+		| Вход в личный кабинет
+	
+	form(action="/" method="post")
+
+		// field
+
+		.input-field
+			input(type="text" name="login" placeholder="Имя пользователя")
+
+		// field
+
+		.input-field
+			input(type="password" name="password" placeholder="Пароль")
+
+		a.popup-forgot(href="#" title="")
+			| Забыли пароль?
+
+		// field
+
+		.button-submit
+			button.btn-simple-blue
+				| Войти
 
 .popup#okthanks
 

@@ -11,11 +11,18 @@ $('.call').click(function(){
 
 // popup registration
 
-$('.popup-registration').hide();
-
 $('.call-popup-registration').click(function(e){
   e.preventDefault();
   $('.popup-registration').bPopup({
+    closeClass:'popup-close',
+      amsl: 0,
+      positionStyle: 'fixed',
+    }); 
+});
+
+$('.call-popup-logIn').click(function(e){
+  e.preventDefault();
+  $('.popup-logIn').bPopup({
     closeClass:'popup-close',
       amsl: 0,
       positionStyle: 'fixed',
